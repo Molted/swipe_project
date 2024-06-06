@@ -548,3 +548,36 @@ main {
 	font-weight: 700;
 	width: 50%;
 }
+
+/* GET STARTED SECTION */
+.get-started-section {
+	padding: var(--spacing-xl) 0;
+}
+
+.get-started-section .primary-btn {
+	background-color: var(--purple-1);
+	margin: var(--spacing-m) 0 0 0;
+}
+.get-started-section .primary-btn:hover {
+	background-color: var(--primary-accent);
+}
+
+.get-started-section .col-left {
+	padding: 0 var(--spacing-xl) 0 0;
+}
+
+.get-started-section .col-right {
+	flex-direction: row;
+}
+
+.get-started-section .col-right .card {
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0 var(--spacing-sm) 0 0;
+	margin: 0 var(--spacing-m) 0 0;
+}
+
+.get-started-section .col-right .card .secondary-btn {
+	color: var(--purple-2);
+	padding-left: 0;
+}
