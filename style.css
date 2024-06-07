@@ -1,4 +1,6 @@
+/* VARIABLES */
 :root {
+	/* TEXT VARIABLES */
 	--text-dark: #000;
 	--text-light: #fff;
 	--text-grey: #adbdcc;
@@ -20,14 +22,14 @@
 	--secondary-text-height: 18px;
 	--button-size: 16px;
 
-	/* SPACING */
+	/* SPACING VARIABLES*/
 	--spacing-sm: 8px;
 	--spacing-m: 16px;
 	--spacing-l: 32px;
 	--spacing-xl: 64px;
-
 	--standard-width: 1144px;
 
+	/* COLOR VARIABLES */
 	--purple-1: #6962f7;
 	--purple-2: #7000ff;
 	--blue-1: #00d4ff;
@@ -46,10 +48,18 @@
 	);
 }
 
+/* GENERAL ELEMENT STYLES */
+
+html,
+body {
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+
 body {
 	font-family: var(--body-font);
 	color: var(--text-dark);
-	width: 100%;
 	margin: 0;
 	box-sizing: border-box;
 	padding: var(--spacing-sm) 0 0 0;
@@ -211,6 +221,7 @@ p {
 	letter-spacing: 0.25px;
 }
 
+/* BUTTON STYLES */
 .primary-btn {
 	font-family: var(--body-font);
 	font-size: var(--button-size);
@@ -312,16 +323,6 @@ p {
 }
 
 /* HERO SECTION */
-.button-container {
-	display: flex;
-	margin: var(--spacing-m) 0;
-}
-
-.button-container button:nth-child(2) {
-	margin: 0 0 0 var(--spacing-m);
-	color: var(--purple-2);
-}
-
 .hero-section p {
 	max-width: 480px;
 }
@@ -334,6 +335,16 @@ p {
 .hero-phone {
 	height: 628px;
 	transform: translate(32px, -32px);
+}
+
+.button-container {
+	display: flex;
+	margin: var(--spacing-m) 0;
+}
+
+.button-container button:nth-child(2) {
+	margin: 0 0 0 var(--spacing-m);
+	color: var(--purple-2);
 }
 
 /* PARTNERS SECTION */
@@ -1039,11 +1050,4 @@ p {
 	.footer-section .icon-link img {
 		width: 18px;
 	}
-}
-
-html,
-body {
-	width: 100%;
-	position: relative;
-	overflow-x: hidden;
 }
