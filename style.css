@@ -821,10 +821,6 @@ p {
 	}
 
 	/* INTEGRATIONS SECTION */
-	.integrations-section {
-		/* padding: var(--spacing-xl) 0; */
-	}
-
 	.integrations-section .card-container {
 		flex-direction: column;
 	}
